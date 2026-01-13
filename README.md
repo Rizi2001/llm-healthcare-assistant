@@ -31,14 +31,19 @@ pip install -r requirements.txt
 ```
 
 Create api_keys.env:
+```bash
 GOOGLE_API_KEY=AI...
+```
 
 Index knowledge base:
+```bash
 python index_healthcare_db.py
+```
 
 Run assistant:
+```bash
 python health_advisor.py
-
+```
 
 ---
 
