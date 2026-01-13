@@ -1,23 +1,51 @@
-## Example of building an healthcare assistant with DSPy
+#  🩺 LLM Healthcare Assistant (DSPy)
 
-It covers modules of DSPy starting from ZeroShot questioning to RAG (Retreival Augmented Generation), CoT (Chain of Thought) and lastly, fine-tuning the llm on trainingdata.json dataset then Q/A on the trained model.
+An AI-driven healthcare assistant built with **DSPy** that answers health-related questions and suggests **safe home remedies for common conditions** using modern LLM pipelines.
 
+## 🚀 Highlights
 
-### How to run
-```
-Install the requirements:
-```commandline
+- Zero-shot & optimized prompting using **DSPy**
+- Retrieval-Augmented Generation (**RAG**) with ChromaDB
+- **Chain-of-Thought reasoning** for improved response quality
+- Fine-tuning workflow on a custom healthcare dataset
+
+## 🧠 What This Project Demonstrates
+
+- Designing LLM programs beyond simple prompts
+- Combining **RAG + reasoning + fine-tuning**
+- Building domain-specific AI assistants
+- Structuring and evaluating LLM pipelines
+
+## 🛠️ Tech Stack
+
+- Python  
+- DSPy  
+- Large Language Models (API-based)  
+- ChromaDB  
+- Retrieval-Augmented Generation (RAG)
+
+## ⚙️ How to Run
+
+```bash
 pip install -r requirements.txt
 ```
-Create a file named api_keys.env and add one/both of the following lines:
-```commandline
+
+Create api_keys.env:
 GOOGLE_API_KEY=AI...
-```
-Index the healthcare content into Chroma DB:
-```commandline
+
+Index knowledge base:
 python index_healthcare_db.py
-```
-Main command:
-```commandline
+
+Run assistant:
 python health_advisor.py
+
+
+---
+
+```md
+## ⚠️ Disclaimer
+
+For educational and experimental purposes only.  
+Not intended for real-world medical diagnosis or treatment.
 ```
+
